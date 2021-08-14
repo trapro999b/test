@@ -19,7 +19,17 @@
 	<div id="header">
 		<div id="banner">
 			<div class="banner-titles">COVID NEWS</div>
-		</div>
+			<--
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="./source/slide1.jpg" style="width:100%">
+				  </div>
+				  <div class="mySlides fade">
+					<img src="./source/slide2.jpg" style="width:100%">
+				  </div>
+			</div>
+			</div>
+	</div>
 		<!--MENU-->
 		<div class="menu-container">
 			<div class="mainmenu">
@@ -63,7 +73,6 @@
 			</div>
 			</div>
 		</div>
-	</div>
 	<!--CONTENT-->
 	<div class="container">
 		<div class="left-box">
@@ -129,33 +138,9 @@
 			</div>
 		</div>
 	</div>
-	<!-- Messenger Plugin chat Code -->
     <div id="fb-root"></div>
-
-    <!-- Your Plugin chat code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "105254745202045");
-      chatbox.setAttribute("attribution", "biz_inbox");
-
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v11.0'
-        });	
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
 	<!--End-->
 	<!--FOOTER -->
 	<div class="footer">
@@ -179,5 +164,37 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		var chatbox = document.getElementById('fb-customer-chat');
+		chatbox.setAttribute("page_id", "105254745202045");
+		chatbox.setAttribute("attribution", "biz_inbox");
+		window.fbAsyncInit = function() {
+		  FB.init({
+			xfbml            : true,
+			version          : 'v11.0'
+		  });	
+		};
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		//Slide
+		var slideIndex = 0;
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			slides[slideIndex-1].style.display = "block";  
+			setTimeout(showSlides, 8000);
+		}
+		showSlides();
+	  </script>
 </body>
 </html>
