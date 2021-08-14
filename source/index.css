@@ -5,9 +5,9 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 html, body {
-    width: 1480px;
-    margin-left: 10px;
-    padding: 0px;
+    width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #eeeeee;
 }
 .search{
@@ -47,12 +47,13 @@ html, body {
     margin-left: 0px;
     margin-right: 0px;
     border-radius: 10px;
-    width: 1480px;
+    width: 1320px;
     height: 1200px;
 }
 .main {
     background-color:#fff;
-    width: 840px;
+    margin-left: 14px;
+    width: 740px;
     height: 1200px;
     border-radius: 8px ;
     box-shadow: 0px 3px 5px #888;
@@ -61,7 +62,7 @@ html, body {
 .main-news {
     display: flex;
     align-items: flex-end;
-    width: 840;
+    width: 740px;
     height: 420px;
     background-image: url("./xet_nghiem.jpg");
 }
@@ -83,34 +84,35 @@ html, body {
 }
 .second-news {
     margin-top: 8px;
-    width: 840px;
+    width: 740px;
     height: 420px;
     background-image: url("./tiem_vaccine.jpg");
 }
 .third-news {
     margin-top: 8px;
-    width: 840px;
+    width: 740px;
     height: 420px;
     background-image: url("./Hanoi_camacmoi.jpg");
 }
 .left-box {
-  width: 320px;
+  width: 280px;
   height: 1600px;
 }
 .world-news {
     margin-top: 10px;
-    width: 300px;
+    width: 280px;
     height: 600px;
     background-color: white;
     box-shadow: 0px 4px 5px #888;
 }
 .world-news-1 {
     margin-top: 4px;
-    width: 300;
+    width: 280;
     height: 200px;
     background-image: url("./world_news_1.jpg");
 }
 .world-news-titles {
+    padding-left: 6px;
     padding-top: 140px;
     font-size: 16px;
     color: white;
@@ -119,7 +121,7 @@ html, body {
     display: flex;
     align-items: flex-end;
     margin-top: 4px;
-    width: 300;
+    width: 280;
     height: 200px;
     background-image: url("./world_news_2.jpg");
 }
@@ -127,12 +129,12 @@ html, body {
     display: flex;
     align-items: flex-end;
     margin-top: 4px;
-    width: 300;
+    width: 280;
     height: 200px;
     background-image: url("./world_news_3.jpg");
 }
 .counting-part {
-    width: 300px;
+    width: 280px;
     height: 88px;
     background-color:#fbc02d;
     box-shadow: 0px 3px 5px #888;
@@ -144,20 +146,20 @@ html, body {
     font-family: 'Secular One', sans-serif;
 }
 .right-box {
-    width: 300px;
-    height: 680px;
+    width: 260px;
+    height: 1680px;
     margin-left: 20px;
 }
 .vn-news {
     margin-top: 20px;
-    width: 300px;
-    height: 380px;
+    width: 260px;
+    height: 420px;
     background-color:#a3e9a4;
     box-shadow: 0px 3px 5px #888;
     border-radius: 8px ;
 }
 .vn-counting {
-    width: 300px;
+    width: 260px;
     height: 88px;
     background-color:#00e5ff;
     box-shadow: 0px 3px 5px #888;
